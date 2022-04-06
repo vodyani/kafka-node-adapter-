@@ -23,16 +23,6 @@ npm install @vodyani/kafka-node-adapter
 
 - [kafka-node](https://github.com/SOHU-Co/kafka-node) `v5`
 
-### Usage
-
-> Due to naming conflicts, you need to introduce additional declare `TypeSequelize` when using `sequelize-typescript`.
-
-```
-import { TypeSequelize } from '@vodyani/kafka-node-adapter';
-```
-
-## Contributing
-
 ## License
 
 Vodyani kafka-node-adapter is [MIT licensed](LICENSE).
