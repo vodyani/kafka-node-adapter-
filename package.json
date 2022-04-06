@@ -67,6 +67,9 @@
     "@vodyani/core": "^0.2.9",
     "kafka-node": "^5.0.0"
   },
+  "peerDependencies": {
+    "kafka-node": "^5.0.0"
+  },
   "devDependencies": {
     "@commitlint/cli": "16.2.3",
     "@commitlint/config-conventional": "16.2.1",
