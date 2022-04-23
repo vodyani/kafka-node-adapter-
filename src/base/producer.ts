@@ -6,7 +6,7 @@ import {
   CustomPartitioner,
   KafkaClientOptions,
 } from 'kafka-node';
-import { AsyncClientAdapter, FixedContext, getDefaultNumber, isValid } from '@vodyani/core';
+import { AsyncClientAdapter, FixedContext } from '@vodyani/core';
 
 export class ProducerAdapter implements AsyncClientAdapter<Producer> {
   public instance: Producer;
@@ -31,11 +31,11 @@ export class ProducerAdapter implements AsyncClientAdapter<Producer> {
   public async publish(payload: ProduceRequest, partition?: number): Promise<any> {
     const client = this.instance;
 
-    if (!isValid(client)) {
+    if (!client) {
       return null;
     }
 
-    const size = getDefaultNumber(partition);
+    const size = partition || 0;
 
     payload.partition = Math.floor(Math.random() * size);
 

@@ -64,7 +64,7 @@
     ]
   },
   "dependencies": {
-    "@vodyani/core": "^0.2.9",
+    "@vodyani/core": "^0.3.6",
     "kafka-node": "^5.0.0"
   },
   "peerDependencies": {
